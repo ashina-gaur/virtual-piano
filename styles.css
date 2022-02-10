@@ -1,0 +1,140 @@
+body {
+  
+  justify-content: center;
+  text-align: center;
+  min-height: 100px;
+  
+  background-color: #ffffff;
+  align-items: center;
+  
+}
+
+h1 {
+  display: flex;
+  position: relative;
+  text-align: center;
+  margin-left: 420px;
+  font-size: 5rem;
+  color: #ffffff;
+  /* -webkit-text-stroke:0.001px #8E806A ; */
+  font-family: 'Times New Roman', Times, serif;
+  
+  text-shadow: 3px 0 #ffffff;
+  white-space: nowrap;
+  
+}
+h1::before
+{
+  display: flex;
+  content: attr(data-text);
+  position: absolute;
+  
+ 
+  color:  #000;
+  width: 0;
+  height: 100%;
+  overflow: hidden;
+  /* -webkit-text-stroke:0.001px #8E806A ; */
+  
+  
+  animation: animate 5s linear infinite;
+}
+@keyframes animate {
+  0%
+  {
+    width: 0ch;
+  }
+  100%
+  {
+    width: 17ch;
+  }
+
+}
+footer {
+  color: #DBEDF3;
+  font-family: sans-serif;
+}
+
+.w {
+
+}
+
+.a {
+
+}
+
+.s {
+
+}
+
+.d {
+
+}
+
+.j {
+
+}
+
+.k {
+
+}
+
+.l {
+
+}
+
+.set {
+  margin: 10% auto;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #828585;
+  opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+
+.key {
+  outline: none;
+  position:relative;
+  font-size: 1rem;
+  z-index: 2;
+  /* margin-left:90px; */
+  bottom: 322px;
+  top:68%;
+  font-family: 'Times New Roman', Times, serif;
+  border: transparent;
+  font-weight: 900;
+  color: #5a5959;
+  
+  /* border-radius: 15px; */
+  display: inline-block;
+  width: 71px;
+  height: 120px;
+  text-align: center;
+  margin: 20px 0;
+  background: transparent;
+}
+.keyboard{
+  top: 100px;
+  position: relative;
+  z-index: 1;
+  height:70%;
+  width: 70%;
+}
+.container{
+  position: relative;
+  background-image: url("background.jpg");
+}
+.black{
+  color: transparent;
+  width: 105px;
+  
+}
